@@ -1,0 +1,12 @@
+import pywhatkit as py
+
+phone = input("Enter the reciever phone no. with country code : ")
+msg = input("Your message : ")
+hour = int(input("Enter the hour in 24-hour format : "))
+minute = int(input("Enter the minute : "))
+
+try:
+    py.sendwhatmsg(phone, msg, hour, minute) #make your sure that your browser is maximized
+    print("msg sent successfully")
+except:
+    print("Check your code")
